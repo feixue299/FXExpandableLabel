@@ -14,6 +14,7 @@
     [super prepareForReuse];
     self.label.collapsed = YES;
     self.label.text = nil;
+    self.label.textAlignment = NSTextAlignmentLeft;
 }
 
 @end

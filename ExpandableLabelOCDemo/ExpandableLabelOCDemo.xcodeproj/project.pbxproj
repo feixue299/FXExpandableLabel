@@ -88,8 +88,8 @@
 		C350710624920FF800AE6DCB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C350710724920FF800AE6DCB /* ExpandableLabel.m */,
 				C350710824920FF800AE6DCB /* ExpandableLabel.h */,
+				C350710724920FF800AE6DCB /* ExpandableLabel.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -312,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpandableLabelOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExpandableLabelOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

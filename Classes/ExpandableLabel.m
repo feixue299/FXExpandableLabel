@@ -247,7 +247,7 @@
     if (text) {
         NSArray *lines = [text linesWithWidth:self.frame.size.width];
         if (self.collapsedNumberOfLines > 0 && self.collapsedNumberOfLines < lines.count) {
-            CTLineRef lastLineRef = (__bridge CTLineRef)lines.lastObject;
+            CTLineRef lastLineRef = (__bridge CTLineRef)lines[self.collapsedNumberOfLines - 1];
             CTLineRef line;
             NSInteger index;
             NSAttributedString *modifiedLastLineText;
@@ -265,7 +265,7 @@
 
             NSMutableAttributedString *collapsedLines = [[NSMutableAttributedString alloc] init];
             for (int i = 0; i < index; i++) {
-                [collapsedLines appendAttributedString:[text textForLineRef:(__bridge CTLineRef)lines[index]]];
+                [collapsedLines appendAttributedString:[text textForLineRef:(__bridge CTLineRef)lines[i]]];
             }
             [collapsedLines appendAttributedString:modifiedLastLineText];
 

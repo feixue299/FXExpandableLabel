@@ -58,7 +58,7 @@
     cell.label.delegate = self;
 
     [cell.label setLessLinkWithLessLink:@"Close" attributes:@{NSForegroundColorAttributeName: UIColor.redColor} position:((NSNumber *)self.alignments[indexPath.row]).integerValue];
-    [cell layoutIfNeeded];
+//    [cell layoutIfNeeded];
 
     cell.label.shouldCollapse = YES;
     cell.label.textReplacementType = ((NSNumber *)self.types[indexPath.row]).integerValue;

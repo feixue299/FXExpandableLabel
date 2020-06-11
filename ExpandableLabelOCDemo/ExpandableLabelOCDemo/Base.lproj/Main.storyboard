@@ -33,25 +33,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="Hrq-RM-yi3" customClass="ExpandableCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="105" id="Hrq-RM-yi3" customClass="ExpandableCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hrq-RM-yi3" id="HIe-cV-eSq">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s57-es-AXJ" customClass="ExpandableLabel">
-                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="s57-es-AXJ" firstAttribute="leading" secondItem="HIe-cV-eSq" secondAttribute="leadingMargin" id="HOJ-4U-FnU"/>
-                                        <constraint firstItem="s57-es-AXJ" firstAttribute="trailing" secondItem="HIe-cV-eSq" secondAttribute="trailingMargin" id="Vdd-8P-QZk"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="s57-es-AXJ" secondAttribute="bottom" id="cmc-yl-ShV"/>
-                                        <constraint firstItem="s57-es-AXJ" firstAttribute="top" secondItem="HIe-cV-eSq" secondAttribute="topMargin" id="oth-wk-xS7"/>
+                                        <constraint firstAttribute="bottom" secondItem="s57-es-AXJ" secondAttribute="bottom" id="8cr-2G-laX"/>
+                                        <constraint firstItem="s57-es-AXJ" firstAttribute="leading" secondItem="HIe-cV-eSq" secondAttribute="leading" id="CdV-Ki-VB8"/>
+                                        <constraint firstItem="s57-es-AXJ" firstAttribute="top" secondItem="HIe-cV-eSq" secondAttribute="top" id="QxW-Ts-gE8"/>
+                                        <constraint firstAttribute="trailing" secondItem="s57-es-AXJ" secondAttribute="trailing" id="j8x-ju-DFr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -68,7 +68,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4F-2w-pBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="835" y="139"/>
+            <point key="canvasLocation" x="834.78260869565224" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
