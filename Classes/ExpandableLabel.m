@@ -73,6 +73,7 @@
     self.expandedAttributedLink = nil;
     self.collapsedAttributedLink = [[NSAttributedString alloc] initWithString:@"More" attributes:@{ NSFontAttributeName: [UIFont boldSystemFontOfSize:self.font.pointSize] }];
     self.ellipsis = [[NSAttributedString alloc] initWithString:@"..."];
+    self.textAlignment = NSTextAlignmentLeft;
 }
 
 - (void)setNumberOfLines:(NSInteger)numberOfLines  {
@@ -95,7 +96,8 @@
 - (void)setAttributedText:(NSAttributedString *)attributedText {
     attributedText = [[attributedText copyWithAddedFontAttributeWithFont:self.font] copyWithParagraphAttributeWithFont:self.font];
     if (attributedText.length > 0) {
-        self.collapsedText = [self getCollapsedTextForText:attributedText link:self.linkHighlighted ? [self.collapsedAttributedLink copyWithHighlightedColor] : self.collapsedAttributedLink];
+        NSAttributedString *link = self.linkHighlighted ? [self.collapsedAttributedLink copyWithHighlightedColor] : self.collapsedAttributedLink;
+        self.collapsedText = [self getCollapsedTextForText:attributedText link:link];
         self.expandedText = [self getExpandedTextForText:attributedText link:self.linkHighlighted ? [self.expandedAttributedLink copyWithHighlightedColor] : self.expandedAttributedLink];
         super.attributedText = self.collapsed ? self.collapsedText : self.expandedText;
     } else {
@@ -339,7 +341,7 @@
 - (NSAttributedString *)copyWithParagraphAttributeWithFont:(UIFont *)font {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineHeightMultiple = 1.05;
-    paragraphStyle.alignment = NSTextAlignmentCenter;
+    paragraphStyle.alignment = NSTextAlignmentLeft;
     paragraphStyle.lineSpacing = 0;
     paragraphStyle.minimumLineHeight = font.lineHeight;
     paragraphStyle.maximumLineHeight = font.lineHeight;
