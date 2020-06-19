@@ -111,6 +111,8 @@
 			dependencies = (
 			);
 			name = ExpandableLabelOCDemo;
+			packageProductDependencies = (
+			);
 			productName = ExpandableLabelOCDemo;
 			productReference = C35070EA24920FC600AE6DCB /* ExpandableLabelOCDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +140,8 @@
 				Base,
 			);
 			mainGroup = C35070E124920FC600AE6DCB;
+			packageReferences = (
+			);
 			productRefGroup = C35070EB24920FC600AE6DCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
