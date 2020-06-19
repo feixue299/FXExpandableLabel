@@ -23,8 +23,6 @@ github "feixue299/ExpandableLabelOC" ~> 0.1
 # Usage
 Using FXExpandableLabel is very simple. In your storyboard, set the custom class of your UILabel to FXExpandableLabel and set the desired number of lines (for the collapsed state):
 
-_**Note:** In Carthage, set Module to `FXExpandableLabel`._
-
 ```swift
 expandableLabel.numberOfLines = 3
 ```
