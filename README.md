@@ -1,4 +1,4 @@
-#FXExpandableLabel
+# FXExpandableLabel
 
 <img src="https://raw.githubusercontent.com/apploft/ExpandableLabel/master/Resources/ExpandableLabel.gif">
 
