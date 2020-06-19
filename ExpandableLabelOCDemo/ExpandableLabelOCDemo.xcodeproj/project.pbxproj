@@ -14,8 +14,8 @@
 		C35070FA24920FCC00AE6DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35070F924920FCC00AE6DCB /* Assets.xcassets */; };
 		C35070FD24920FCC00AE6DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35070FB24920FCC00AE6DCB /* LaunchScreen.storyboard */; };
 		C350710024920FCC00AE6DCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C35070FF24920FCC00AE6DCB /* main.m */; };
-		C350710924920FF800AE6DCB /* ExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C350710724920FF800AE6DCB /* ExpandableLabel.m */; };
 		C350710C2492101300AE6DCB /* ExpandableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C350710B2492101300AE6DCB /* ExpandableCell.m */; };
+		C3711F77249C5BC600BF5F06 /* ExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3711F75249C5BC600BF5F06 /* ExpandableLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		C35070FC24920FCC00AE6DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35070FE24920FCC00AE6DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35070FF24920FCC00AE6DCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C350710724920FF800AE6DCB /* ExpandableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableLabel.m; sourceTree = "<group>"; };
-		C350710824920FF800AE6DCB /* ExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableLabel.h; sourceTree = "<group>"; };
 		C350710A2492101300AE6DCB /* ExpandableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableCell.h; sourceTree = "<group>"; };
 		C350710B2492101300AE6DCB /* ExpandableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableCell.m; sourceTree = "<group>"; };
+		C3711F75249C5BC600BF5F06 /* ExpandableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableLabel.m; sourceTree = "<group>"; };
+		C3711F76249C5BC600BF5F06 /* ExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		C35070EC24920FC600AE6DCB /* ExpandableLabelOCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C350710624920FF800AE6DCB /* Classes */,
+				C3711F74249C5BC600BF5F06 /* Sources */,
 				C35070ED24920FC600AE6DCB /* AppDelegate.h */,
 				C35070EE24920FC600AE6DCB /* AppDelegate.m */,
 				C35070F024920FC600AE6DCB /* SceneDelegate.h */,
@@ -85,14 +85,14 @@
 			path = ExpandableLabelOCDemo;
 			sourceTree = "<group>";
 		};
-		C350710624920FF800AE6DCB /* Classes */ = {
+		C3711F74249C5BC600BF5F06 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C350710824920FF800AE6DCB /* ExpandableLabel.h */,
-				C350710724920FF800AE6DCB /* ExpandableLabel.m */,
+				C3711F75249C5BC600BF5F06 /* ExpandableLabel.m */,
+				C3711F76249C5BC600BF5F06 /* ExpandableLabel.h */,
 			);
-			name = Classes;
-			path = ../../Classes;
+			name = Sources;
+			path = ../../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +167,7 @@
 			files = (
 				C35070F524920FC600AE6DCB /* ViewController.m in Sources */,
 				C35070EF24920FC600AE6DCB /* AppDelegate.m in Sources */,
-				C350710924920FF800AE6DCB /* ExpandableLabel.m in Sources */,
+				C3711F77249C5BC600BF5F06 /* ExpandableLabel.m in Sources */,
 				C350710024920FCC00AE6DCB /* main.m in Sources */,
 				C35070F224920FC600AE6DCB /* SceneDelegate.m in Sources */,
 				C350710C2492101300AE6DCB /* ExpandableCell.m in Sources */,

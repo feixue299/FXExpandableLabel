@@ -1,16 +1,29 @@
-# ExpandableLabel
-ExpandableLabel is a simple UILabel subclass that shows a tappable link if the content doesn't fit the specified number of lines. If touched, the label will expand to show the entire content.
+#FXExpandableLabel
 
 <img src="https://raw.githubusercontent.com/apploft/ExpandableLabel/master/Resources/ExpandableLabel.gif">
 
-## Maintenance
-This project is passively maintained. Pull Requests are welcome, will be reviewed, merged and released as new CocoaPod version as long as they don't break things.
-Nevertheless we don't have the resources to actively continue development, answer issues or give support for integration.
+## Requirements
+- iOS 9.0+
+
+## Installtion
+
+### Cocoapods
+For FXImageTextView, use the following entry in your Podfile:
+```rb
+pod 'FXExpandableLabel', '~>0.1'
+```
+
+### Carthage
+Make the following entry in your Cartfile:
+
+```
+github "feixue299/ExpandableLabelOC" ~> 0.1
+```
 
 # Usage
-Using ExpandableLabel is very simple. In your storyboard, set the custom class of your UILabel to ExpandableLabel and set the desired number of lines (for the collapsed state):
+Using FXExpandableLabel is very simple. In your storyboard, set the custom class of your UILabel to FXExpandableLabel and set the desired number of lines (for the collapsed state):
 
-_**Note:** In Carthage, set Module to `ExpandableLabel`._
+_**Note:** In Carthage, set Module to `FXExpandableLabel`._
 
 ```swift
 expandableLabel.numberOfLines = 3
@@ -60,6 +73,3 @@ Set the ellipsis that appears just after the text and before the link.
 expandableLabel.ellipsis = NSAttributedString(string: "...")
 ```
 
-
-# License
-ExpandableLabel is available under the MIT license. See the LICENSE file for more info.

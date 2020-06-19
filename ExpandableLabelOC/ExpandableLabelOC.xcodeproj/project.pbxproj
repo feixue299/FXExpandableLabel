@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C3528D472490E8BB001B3BFB /* ExpandableLabelOC.h in Headers */ = {isa = PBXBuildFile; fileRef = C3528D452490E8BB001B3BFB /* ExpandableLabelOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3528D502490E92F001B3BFB /* ExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C3528D4E2490E92F001B3BFB /* ExpandableLabel.h */; };
-		C3528D512490E92F001B3BFB /* ExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3528D4F2490E92F001B3BFB /* ExpandableLabel.m */; };
+		C3711F72249C5BB300BF5F06 /* ExpandableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3711F70249C5BB300BF5F06 /* ExpandableLabel.m */; };
+		C3711F73249C5BB300BF5F06 /* ExpandableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C3711F71249C5BB300BF5F06 /* ExpandableLabel.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3528D422490E8BB001B3BFB /* ExpandableLabelOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExpandableLabelOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3528D452490E8BB001B3BFB /* ExpandableLabelOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableLabelOC.h; sourceTree = "<group>"; };
 		C3528D462490E8BB001B3BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3528D4E2490E92F001B3BFB /* ExpandableLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableLabel.h; sourceTree = "<group>"; };
-		C3528D4F2490E92F001B3BFB /* ExpandableLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableLabel.m; sourceTree = "<group>"; };
+		C3711F70249C5BB300BF5F06 /* ExpandableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableLabel.m; sourceTree = "<group>"; };
+		C3711F71249C5BB300BF5F06 /* ExpandableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,21 +50,21 @@
 		C3528D442490E8BB001B3BFB /* ExpandableLabelOC */ = {
 			isa = PBXGroup;
 			children = (
-				C3528D4D2490E8DB001B3BFB /* Classes */,
+				C3711F6F249C5BB300BF5F06 /* Sources */,
 				C3528D452490E8BB001B3BFB /* ExpandableLabelOC.h */,
 				C3528D462490E8BB001B3BFB /* Info.plist */,
 			);
 			path = ExpandableLabelOC;
 			sourceTree = "<group>";
 		};
-		C3528D4D2490E8DB001B3BFB /* Classes */ = {
+		C3711F6F249C5BB300BF5F06 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C3528D4E2490E92F001B3BFB /* ExpandableLabel.h */,
-				C3528D4F2490E92F001B3BFB /* ExpandableLabel.m */,
+				C3711F70249C5BB300BF5F06 /* ExpandableLabel.m */,
+				C3711F71249C5BB300BF5F06 /* ExpandableLabel.h */,
 			);
-			name = Classes;
-			path = ../../Classes;
+			name = Sources;
+			path = ../../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3528D472490E8BB001B3BFB /* ExpandableLabelOC.h in Headers */,
-				C3528D502490E92F001B3BFB /* ExpandableLabel.h in Headers */,
+				C3711F73249C5BB300BF5F06 /* ExpandableLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3528D512490E92F001B3BFB /* ExpandableLabel.m in Sources */,
+				C3711F72249C5BB300BF5F06 /* ExpandableLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
