@@ -20,6 +20,18 @@ Make the following entry in your Cartfile:
 github "feixue299/ExpandableLabelOC" ~> 0.1
 ```
 
+### [Swift Package Manager](https://github.com/apple/swift-package-manager)
+
+Create a `Package.swift` file.
+
+```swift
+let package = Package(
+    dependencies: [
+        .package(url: "https://github.com/feixue299/ExpandableLabelOC.git", from: "0.1.0")
+    ],
+    // ...
+)
+
 # Usage
 Using FXExpandableLabel is very simple. In your storyboard, set the custom class of your UILabel to FXExpandableLabel and set the desired number of lines (for the collapsed state):
 
