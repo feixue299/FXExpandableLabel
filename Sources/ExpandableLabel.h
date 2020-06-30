@@ -2,8 +2,8 @@
 //  ExpandableLabel.h
 //  ExpandableLabelOC
 //
-//  Created by 8-PC on 2020/6/10.
-//  Copyright © 2020 wu. All rights reserved.
+//  Created by Mr.wu on 2020/6/10.
+//  Copyright © 2020 Mr.wu All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
