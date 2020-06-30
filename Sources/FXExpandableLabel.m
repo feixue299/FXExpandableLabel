@@ -1,15 +1,15 @@
 //
-//  ExpandableLabel.m
+//  FXExpandableLabel.m
 //  ExpandableLabelOC
 //
 //  Created by Mr.wu on 2020/6/10.
 //  Copyright © 2020 Mr.wu All rights reserved.
 //
 
-#import "ExpandableLabel.h"
+#import "FXExpandableLabel.h"
 #import <CoreText/CoreText.h>
 
-@interface ExpandableLabel ()
+@interface FXExpandableLabel ()
 
 @property (nonatomic, copy, nullable) NSAttributedString *collapsedText;
 @property (nonatomic, assign) BOOL linkHighlighted;
@@ -40,7 +40,7 @@
 - (BOOL)checkWithTouch:(UITouch *)touch isInRange:(NSRange)targetRange;
 @end
 
-@implementation ExpandableLabel
+@implementation FXExpandableLabel
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -64,7 +64,7 @@
     self.collapsed = YES;
     self.shouldExpand = YES;
     self.shouldCollapse = NO;
-    self.textReplacementType = ExpandableLabelTextReplacementTypeWord;
+    self.textReplacementType = FXExpandableLabelTextReplacementTypeWord;
     self.touchSize = CGSizeMake(44, 44);
     self.collapsedNumberOfLines = 0;
     self.userInteractionEnabled = YES;
@@ -254,7 +254,7 @@
             NSInteger index;
             NSAttributedString *modifiedLastLineText;
 
-            if (self.textReplacementType == ExpandableLabelTextReplacementTypeWord) {
+            if (self.textReplacementType == FXExpandableLabelTextReplacementTypeWord) {
                 NSArray *lineIndex = [self findLineWithWords:lastLineRef text:text lines:lines];
                 line = (__bridge CTLineRef)lineIndex[0];
                 index = ((NSNumber *)lineIndex[1]).integerValue;

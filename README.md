@@ -8,7 +8,7 @@
 ## Installtion
 
 ### Cocoapods
-For FXImageTextView, use the following entry in your Podfile:
+For FXExpandableLabel, use the following entry in your Podfile:
 ```rb
 pod 'FXExpandableLabel', '~>0.1'
 ```

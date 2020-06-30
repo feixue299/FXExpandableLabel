@@ -1,5 +1,5 @@
 //
-//  ExpandableLabel.h
+//  FXExpandableLabel.h
 //  ExpandableLabelOC
 //
 //  Created by Mr.wu on 2020/6/10.
@@ -9,26 +9,26 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class ExpandableLabel;
+@class FXExpandableLabel;
 
-@protocol ExpandableLabelDelegate <NSObject>
+@protocol FXExpandableLabelDelegate <NSObject>
 
 @optional
-- (void)willExpandLabel:(ExpandableLabel *)label;
-- (void)didExpandLabel:(ExpandableLabel *)label;
-- (void)willCollapseLabel:(ExpandableLabel *)label;
-- (void)didCollapseLabel:(ExpandableLabel *)label;
+- (void)willExpandLabel:(FXExpandableLabel *)label;
+- (void)didExpandLabel:(FXExpandableLabel *)label;
+- (void)willCollapseLabel:(FXExpandableLabel *)label;
+- (void)didCollapseLabel:(FXExpandableLabel *)label;
 
 @end
 
-typedef NS_ENUM(NSUInteger, ExpandableLabelTextReplacementType) {
-    ExpandableLabelTextReplacementTypeCharacter,
-    ExpandableLabelTextReplacementTypeWord,
+typedef NS_ENUM(NSUInteger, FXExpandableLabelTextReplacementType) {
+    FXExpandableLabelTextReplacementTypeCharacter,
+    FXExpandableLabelTextReplacementTypeWord,
 };
 
-@interface ExpandableLabel : UILabel
+@interface FXExpandableLabel : UILabel
 
-@property (nonatomic, weak, nullable) id<ExpandableLabelDelegate> delegate;
+@property (nonatomic, weak, nullable) id<FXExpandableLabelDelegate> delegate;
 /// Set 'true' if the label should be collapsed or 'false' for expanded.
 @property (nonatomic, assign) BOOL collapsed;
 /// Set 'true' if the label can be expanded or 'false' if not.
@@ -51,7 +51,7 @@ typedef NS_ENUM(NSUInteger, ExpandableLabelTextReplacementType) {
 /// Also don't forget to set the contentMode of this label to top to smoothly reveal the hidden lines.
 /// The default value is 'nil'.
 @property (nonatomic, strong, nullable) UIView *animationView;
-@property (nonatomic, assign) ExpandableLabelTextReplacementType textReplacementType;
+@property (nonatomic, assign) FXExpandableLabelTextReplacementType textReplacementType;
 @property (nonatomic, readonly) NSAttributedString *expandedText;
 
 - (void)setLessLinkWithLessLink:(NSString *)lessLink attributes:(NSDictionary<NSAttributedStringKey, id> *)attributes position:(NSTextAlignment)position;
